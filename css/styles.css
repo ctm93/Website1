@@ -1,0 +1,72 @@
+
+
+
+
+body {
+    background-color:palevioletred;
+    color:white;
+    }
+    
+header, main, nav, footer {
+    text-align:center;
+}
+
+nav a { /*links within "nav" container */
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 1.8em;
+    text-decoration: none; /*removes underline */
+    color:white; /* by default, links are blue */
+}
+
+nav a:hover {/*pseudo class*/
+    border-bottom:2px orange solid;
+    font-size: 2em;
+    transition: .9s; /*transition effect */
+}
+
+figure, div{
+    float: left;
+}
+
+#me, #welcomeText{
+    float:left;
+}
+
+footer {
+    clear:left;
+}
+
+main {
+        display: flex;
+        justify-content: center;
+    }
+    table {
+        margin: 0 auto;
+    }
+    td {
+        padding-right: 10px;
+        font-size: 1.3em;
+    }
+    td strong {
+        color: white;
+    }
+    #table-header {
+        background-color: #00B2D8;
+    }
+    .table-row {
+        background-color: #91004F;
+    }    
+    ul {
+        width:500px;
+        margin: 0 auto;
+        text-align: left;
+    }
+    .hobby {
+        color: #A9005E;
+    }
+    h1{
+        font-family: Georgia, serif;
+        font-size: 3em;
+        margin-bottom: 0px;
+    }
