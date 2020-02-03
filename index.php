@@ -33,9 +33,9 @@ in html
         <!-- The links to other pages in the website -->
     <nav>
         <hr width = "50%" />
-        <a href = "index.html">HOME</a>
-        <a href = "about.html">ABOUT</a>
-        <a href = "contact.html">CONTACT</a>
+        <a href = "index.php">HOME</a>
+        <a href = "about.php">ABOUT</a>
+        <a href = "contact.php">CONTACT</a>
     </nav>
 
     <br /><br />
