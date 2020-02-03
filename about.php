@@ -49,6 +49,9 @@
              CST336 Internet Programming. 2020&copy; Martinez <br />
              <strong>Disclaimer:</strong> The information in this webpage is fictitious. <br /> 
              It is used for academic purposes only.
+			 
+			 <p><img src="img/csumblogo.JPG" alt= width="150" height="50"></p>
+			 
         </footer>
     </body>
     
