@@ -1,0 +1,130 @@
+    
+    body {
+        background-color: black;
+        color: white;
+        text-align: left;
+    }
+    
+    header, main, nav, footer {
+        text-align: center; 
+    }
+    
+    nav a {
+        padding:15px;
+        padding-bottom:4px;
+        font-size: 1.7em;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav a:hover {  /*pseudo class*/
+         
+         color: green;
+         transition: .9s;
+    }
+    
+    main {
+        display: flex;
+        justify-content: center;
+    }
+    
+    div {
+          text-align: center;
+        }
+
+    p {
+      text-indent: 50px;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    
+    .p1 {
+      text-indent: 110px;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    
+        .p2 {
+      text-indent: 110px;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    
+    ul {
+        width:500px;
+        margin: 0 auto;
+        text-align: left;
+        }
+    
+    .hobby {
+        color: green;
+        }
+    
+    h1{
+        font-family: "Courier New", Courier, monospace;
+        font-size: 3.5em;
+        margin-bottom: 0px;
+        }
+    
+    h2{
+        font-family: "Courier New", Courier, monospace;
+        font-size: 2em;
+        margin-bottom: 0px;
+        color: green;
+        }
+        
+    h3{
+        font-family: "Courier New", Courier, monospace;
+        font-size: 1.5em;
+        margin-bottom: 45px;
+    }
+    
+    table {
+          table-layout: fixed;
+          width: 600px;
+          border: 1px solid white;
+          margin-left: 65px;
+          
+        }
+
+    td {
+          border: 1px solid green;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        
+    img {
+           width:650px;
+           border:1px solid white;
+        }
+        
+    a{
+        padding:15px;
+        padding-bottom:4px;
+        font-size: 1.5em;
+        color: green;
+        font-family: "Courier New", Courier, monospace;
+        text-decoration: underline;
+    }
+    
+    a:hover {  /*pseudo class*/
+         
+         color: white;
+         transition: .9s;
+    }
+        
+    footer{
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+      .p3 {
+      text-indent: 0px;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    
+
+    
