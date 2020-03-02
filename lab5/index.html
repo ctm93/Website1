@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+<title>Pixel Image Search</title>
+</head>
+
+<body>
+    
+<div class="jumbotron">
+        <h1 class="display-4">PixaBay Image Search</h1>
+    </div>
+    
+    <body class="text-center">
+                 Keyword: <input class="form-group" type="text" id="keyword">
+               <br>
+                Orientation: <select id="orientation" name="orientation" > 
+      <option value="">Select One</option>
+        <option value="horizontal">Horizontal</option>
+        <option value="vertical">Vertical</option>
+        </select>
+        <br>
+       <br> <button type="button" class="btn btn-secondary" id="search">Search</button>
+        <hr>
+         
+         <div class="d-flex flex-row justify-content-center" id="images"></div>
+       
+       
+        <script>
+        $(document).ready(function() {
+            var API_KEY = '13831362-d94082f6786e81d3c952bf5a8';
+            var totalHits;
+
+            $("#search").on("click", function() {
+                var URL = "https://pixabay.com/api/?key=" + API_KEY + "&q=" + encodeURIComponent($("#keyword").val()) + "&orientation=" + encodeURIComponent($("#orientation").val());
+
+                $.ajax({
+                    dataType: "json",
+                    url: URL,
+                    // data: data,
+                    success: function(result) {
+                        if (parseInt(result.totalHits) > 0) {
+                            totalHits = result.hits.length;
+                            displayImages(result);
+                        }
+                        else {
+                            console.log('No hits');
+                        }
+                    }
+                });
+            });
+
+            function displayImages(data) {
+                var ranNums = random(totalHits);
+                for (var i = 0; i < ranNums.length; i++) {
+                    $("#images").append("<div class='d-flex flex-column'>" + "Likes: " + data.hits[ranNums[i]].likes + "<img src='" + data.hits[ranNums[i]].previewURL + "'></div>");
+                }
+            }
+
+            function random(totalHits) {
+                var i = 0;
+                var num;
+                var array = [];
+                while (i < 4) {
+                    num = Math.floor(Math.random() * totalHits);
+                    array.push(num);
+                    i++;
+                }
+                return array;
+            }
+
+
+        });
+    </script>
+
+
+</body>
+</html>
