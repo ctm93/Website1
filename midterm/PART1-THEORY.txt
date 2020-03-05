@@ -1,0 +1,8 @@
+1a.inline styles, IDs, classes/attribues/pseudo-classes, elements and pseudo-elements.
+1b. The difference between Margin and Padding is that the Margin defines the space of outside an element to its next outside element.
+     Padding is the space between an element content and its border.
+2a. "!=" means not equal to and "!==" means not equal the value or type.
+2b. false
+3.2
+  2
+4.
