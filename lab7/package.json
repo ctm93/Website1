@@ -14,3 +14,8 @@
     "request": "^2.88.2"
   }
 }
+
+ "post-install-cmd": [
+     "php artisan clear-compiled",
+     "chmod -R 777 public/"
+ ]
