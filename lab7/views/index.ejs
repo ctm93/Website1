@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Pixabay Search (Express Version) </title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header class="jumbotron">
+        <h1> Pixabay Search (Express Version) </h1>
+        
+        <form action="/results" method="GET">
+            
+            Keyword: <input type="text" name="keyword">
+            <button> Search </button>
+            
+            Orientation: <select id="orientation" name="orientation" > 
+            <option value="">Select One</option>
+            <option value="horizontal">Horizontal</option>
+            <option value="vertical">Vertical</option>
+            </select>
+            <br>
+            
+        <hr>
+            </header>
+        </form> <br>
+        
+
+    </body>
+</html>
